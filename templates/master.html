@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY PORTFOLIO</title>
+    {% load static %}
+    <script src="{% static 'bootstrap/js/jquery-3.4.0.js' %}"></script>
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/styles.css' %}">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md bg-primary text-white  navbar-dark">
+    <a style="color: #0a0a0a" class="bradname navbar-brand" href="{% url 'home-url' %}">Denis Kathurima</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{% url 'home-url' %}">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="{% url 'educationandskills-url' %}">Education & Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{% url 'project-url' %}">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="{% url 'contact_me-url' %}">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+  {% block content %}
+
+{% endblock %}
+
+
+
+</body>
+</html>

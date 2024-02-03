@@ -1,0 +1,30 @@
+{% extends 'master.html' %}
+{% load static %}
+<script src="{% static 'bootstrap/js/jquery-3.4.0.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+{% block content %}
+    <div class="index  row">
+        <div class="col-md-6 col-sm-9 col-4 col-lg-10 col-xl-7">
+            <div class="container">
+                <h3 style="color: #d302f5" class="greetings font-weight-bold">Hello Everyone,</h3>
+                <p style="font-family:sans-serif" class="font-weight-bold">My name is Denis Kathurima.</p>
+                <p style="font-family:sans-serif">I'm a tech fanatic with a passion for coding and problem solving.
+                    I use my Front End skills to develop user friendly interfaces that any user can easily interact with.
+                <p style="font-family:sans-serif">I also do Back End development to make sure the problem is fully solved. As technology continues to advance everyday,
+                    I am eager to learn new trends to always keep me competent in the industry.</p> <br>
+                <a href="https://www.linkedin.com/in/denis-kathurima-1b416a155/" target="_blank"><button type="button" class="btn btn-primary">LinkedIn</button></a>
+                <a href="https://github.com/deniskathurima" target="_blank"><button type="button" class="btn btn-primary">github</button></a>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-3 col-8 col-lg-2 col-xl-5" >
+            <div class="container">
+                <img class="rounded-circle" src="{% static 'images/pic9.JPG' %}" alt="" style="width: 400px; height: 400px;">
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
